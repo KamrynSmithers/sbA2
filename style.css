@@ -1,10 +1,13 @@
 html {
 background-color: hsl(206, 80%, 96%);
-font-family:Barlow Semi Condensed;
+font-family:Barlow Semi Condensed, sans-serif;
 }
-
+img, img .profile {
+    width: 50px;
+    border-radius: 50%;
+}
 body {
-padding:5px;
+padding:20px;
 }
 
 .container { 
@@ -13,16 +16,17 @@ display: flex;
       align-items: center;
 text-align: center;*/
 display: grid;
-  grid-template-columns: auto auto auto;
+  /*grid-template-columns: auto auto auto;*/
   padding: 10px;
+  max-width: 1200px;
+  margin: auto;
 }
 .container div {
-  border: 1px solid black;
   padding: 10px;
   font-size: 30px;
-  text-align: center;
+  text-align: center; }
 .dan {
-    display: flex;
+   grid-column: span 2;
 /*background-image: url(images/bg-pattern-quotation.svg);
 background-repeat: no-repeat;*/
 background-color: hsl(263, 55%, 52%);
@@ -30,9 +34,9 @@ color:white;
 border-radius: 10px;
 
 
+
 }
-.left { flex: 1; padding: 20px; } 
-.right { flex: 1; padding: 20px; }
+
 
 
 .quote
@@ -40,33 +44,40 @@ border-radius: 10px;
     float: right;
 }
 .john {
-    display: flex;
 background-color: hsl(224, 10%, 45%);
 color: white;
-border-radius: 10px;
+/*border-radius: 10px;
+max-width: 40px;*/
 }
 
 .jean {
-    display: flex;
 background-color: white;
 border-radius: 10px;
 
 }
 
 .pat {
-    display: flex;
+
 background-color: hsl(217, 19%, 35%);
 color: white;
 border-radius: 10px;
+grid-column: span 2;
 
 }
 
 .kira { 
-    display: flex;
 background-color: white;
 border-radius: 10px;
+grid-column: 4 / 5;
+grid-row: 1 / span 2;
 
 }
 .flex {
    overflow: hidden;
+}
+
+.profile {
+  
+  border-radius: 50%;
+  display: flex;
 }
