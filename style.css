@@ -4,42 +4,69 @@ font-family:Barlow Semi Condensed;
 }
 
 body {
-
+padding:5px;
 }
 
 .container { 
-margin: auto;
+/*margin: auto;
+display: flex;
+      align-items: center;
+text-align: center;*/
+display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
 }
-
+.container div {
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
 .dan {
-    display: block;
+    display: flex;
 /*background-image: url(images/bg-pattern-quotation.svg);
 background-repeat: no-repeat;*/
 background-color: hsl(263, 55%, 52%);
 color:white;
+border-radius: 10px;
+
+
 }
+.left { flex: 1; padding: 20px; } 
+.right { flex: 1; padding: 20px; }
+
+
 .quote
 {
     float: right;
 }
 .john {
-    display: block;
+    display: flex;
 background-color: hsl(224, 10%, 45%);
 color: white;
+border-radius: 10px;
 }
 
 .jean {
-    display: block;
+    display: flex;
 background-color: white;
+border-radius: 10px;
+
 }
 
 .pat {
-    display: block;
+    display: flex;
 background-color: hsl(217, 19%, 35%);
 color: white;
+border-radius: 10px;
+
 }
 
 .kira { 
-    display: block;
+    display: flex;
 background-color: white;
+border-radius: 10px;
+
+}
+.flex {
+   overflow: hidden;
 }
