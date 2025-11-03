@@ -1,0 +1,37 @@
+html {
+background-color: hsl(206, 80%, 96%);
+
+}
+
+body {
+
+}
+
+.container { 
+margin: auto;
+}
+
+.dan {
+    display: block;
+background-color: hsl(263, 55%, 52%);
+}
+
+.john {
+    display: block;
+background-color: hsl(224, 10%, 45%);
+}
+
+.jean {
+    display: block;
+background-color: white;
+}
+
+.pat {
+    display: block;
+background-color: hsl(217, 19%, 35%);
+}
+
+.kira { 
+    display: block;
+background-color: white;
+}
